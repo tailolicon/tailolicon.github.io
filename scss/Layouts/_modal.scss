@@ -1,0 +1,59 @@
+.modal-backdrop {
+    z-index: 9;
+}
+
+.modal.show .modal-dialog {
+    top: 20%;
+}
+
+.modalLogin {
+    .modal-dialog {
+        .modal-content {
+            text-align: center;
+            .modal-header {
+                .icon {
+                    position: absolute;
+                    top: 25px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 80px;
+                    height: 80px;
+                    background-color: #00324f;
+                    font-size: 50px;
+                    color: #fff;
+                    border-radius: 50%;
+                }
+            }
+            .modal-body {
+                h4 {
+                    font-size: 24px;
+                }
+                form {
+                    margin: 0 auto;
+                    width: 80%;
+                    .card-input {
+                        input {
+                            background: rgb(228, 225, 225);
+                            border-radius: 10px;
+                            border: none;
+                            font-size: 14px;
+                        }
+                    }
+                    .form-btn {
+                        text-align: center;
+                        button {
+                            font-size: 14px;
+                            border-radius: 10px;
+                            padding: 6px 20px;
+                        }
+                    }
+                    #modal-pw {
+                        color: $color-blue-100;
+                        padding: 0;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}
