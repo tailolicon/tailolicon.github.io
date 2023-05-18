@@ -131,7 +131,7 @@ div {
 
 .img-fluid {
   width: 100% !important;
-  height: 100%;
+  height: 145px;
 }
 
 .btn-vehicle {
@@ -218,12 +218,26 @@ div {
   background-color: #fff;
   color: #ff4040;
 }
-
+.btn-go1{
+  margin-bottom: -260px;
+  border: 2px solid #f8f9fa;
+    border-radius: 40px;
+    background-color: #d9e3e900;
+    color: #f8f9fa;
+    font-weight: bold;
+    padding: 6px 18px;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.btn-go1:hover{
+  background-color: #d9e3e9;
+  color: #007cc3;
+}
 .btn-go {
   border: 2px solid #dfe3e6;
   border-radius: 40px;
-  background-color: #354751;
-  color: #fff;
+  background-color: #3495c900;
+  color: #2733db;
   font-weight: bold;
   padding: 6px 15px;
   font-size: 1.4rem;
@@ -252,9 +266,10 @@ div {
 }
 
 .btn-build {
+  margin-top: 3px;
   border: 2px solid #fff;
   border-radius: 40px;
-  background-color: transparent;
+  background-color: #d9e3e900;
   color: #fff;
   font-weight: bold;
   padding: 6px 15px;
@@ -263,7 +278,7 @@ div {
 }
 
 .btn-build:hover {
-  background-color: #fff;
+  background-color: #d9e3e9;
   color: #007cc3;
 }
 
@@ -1296,13 +1311,12 @@ div {
 .intro .intro-container .intro-left .intro-left-content {
   color: #fff;
   position: absolute;
-  bottom: 10%;
+  bottom: 48%;
   font-size: 1.4rem;
 }
 
 .intro .intro-container .intro-left .intro-left-content h4 {
   font-weight: bold;
-  margin-bottom: 20px;
   font-size: 1.8rem;
 }
 
@@ -1319,24 +1333,26 @@ div {
 .intro .intro-container .intro-right .intro-right-content {
   color: #fff;
   position: absolute;
-  top: 30%;
+  top: 2%;
   left: 5%;
   font-size: 1.8rem;
-  width: 40%;
+  width: 45%;
 }
 
 .intro .intro-container .intro-right .intro-right-content h4 {
   font-weight: bold;
-  margin-bottom: 20px;
-  background: rgb(194 200 204 / 80%);
-  padding: 6px 15px;
-  display: inline-block;
-  font-size: 1.8rem;
+    margin-bottom: 16px;
+    background: rgb(194 200 204 / 0%);
+    padding: 9px 15px;
+    display: inline-block;
+    font-size: 1.5rem;
+    padding-left:0px;
+    margin-bottom:0px
 }
 
 .intro .intro-container .intro-right .intro-right-content p {
-  font-weight: bold;
-  margin-bottom: 30px;
+  font-size: 15px;
+  margin-bottom: px;
 }
 
 #our-vehicles {
@@ -1526,7 +1542,7 @@ div {
 
 #our-vehicles .function:hover .btn-go {
   background-color: transparent;
-  color: #2198dc;
+    color: #21252980;
 }
 
 #our-vehicles .function h3 {
