@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Giới thiệu Lamborghini Aventador</title>
+	<link rel="stylesheet" type="text/css" href="app.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Trang chủ</a></li>
+				<li><a href="#">Tổng quan</a></li>
+				<li><a href="#">Thông số kỹ thuật</a></li>
+				<li><a href="#">Hình ảnh</a></li>
+				<li><a href="#">Liên hệ</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section id="intro">
+			<h2>Giới thiệu về xe Lamborghini Aventador</h2>
+			<p>Lamborghini Aventador là một trong những mẫu siêu xe nổi tiếng của Lamborghini. Chiếc xe này được thiết
+				kế với phong cách hiện đại, sự mạnh mẽ và đẳng cấp. Với động cơ V12 mạnh mẽ và khả năng vận hành tuyệt
+				vời, Lamborghini Aventador là biểu tượng của tốc độ và sự sang trọng.</p>
+			<button>BUY CAR</button>
+		</section>
+		<section id="overview">
+			<h2>Tổng quan</h2>
+			<div class="container">
+				<div class="left-side">
+					<div class="flex-box">
+						<span class="text1">Loại nhiên liệu</span>
+						<span class="text2">Xăng</span>
+					</div>
+					<div class="flex-box">
+						<span class="text1">Số ghế</span>
+						<span class="text2">2</span>
+					</div>
+					<div class="flex-box">
+						<span class="text1">Màu nội thất</span>
+						<span class="text2">Đa dạng</span>
+					</div>
+					<div class="flex-box">
+						<span class="text1">Năm sản xuất</span>
+						<span class="text2">2021</span>
+					</div>
+				</div>
+				<div class="right-side">
+					<div class="flex-box">
+						<span class="text1">ODO</span>
+						<span class="text2">0 km</span>
+					</div>
+					<div class="flex-box">
+						<span class="text1">Hộp số</span>
+						<span class="text2">Tự động</span>
+					</div>
+					<div class="flex-box">
+						<span class="text1">Dẫn động</span>
+						<span class="text2">4 bánh</span>
+					</div>
+					<div class="flex-box">
+						<span class="text1">Màu ngoại thất</span>
+						<span class="text2">Đa dạng</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="specs">
+			<h2>Thông số kỹ thuật</h2>
+			<div class="container">
+				<div class="left-side">
+					<div class="flex-box">
+						<span class="text1">Động cơ</span>
+						<span class="text2">6.5L V12</span>
+					</div>
+					<div class="flex-box">
+						<span class="text1">Công suất tối đa</span>
+						<span class="text2">730 hp @ 8400 rpm</span>
+					</div>
+					<div class="flex-box">
+						<span class="text1">Mô-men xoắn tối đa</span>
+						<span class="text2">509 lb-ft @ 5500 rpm</span>
+					</div>
+				</div>
+				<div class="right-side">
+					<div class="flex-box">
+						<span class="text1">Hộp số</span>
+						<span class="text2">ISR 7 cấp</span>
+					</div>
+					<div class="flex-box">
+						<span class="text1">Kích thước</span>
+						<span class="text2">188.07 x 79.92 x 44.72 in</span>
+					</div>
+					<div class="flex-box">
+						<span class="text1">Trọng lượng</span>
+						<span class="text2">3,472 lbs (1,575 kg)</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="gallery">
+			<h2>Hình ảnh của xe Lamborghini Aventador</h2>
+			<div class="gallery-container">
+				<img src="img/xe-1.png" alt="Honda Civic Sedan">
+				<img src="img/xe-1-hover.png" alt="Honda Civic Sedan">
+				<img src="img/xe-2-hover.png" alt="Honda Civic Sedan">
+				<img src="img/xe-2.png" alt="Honda Civic Sedan">
+			</div>
+		</section>
+
+		<section id="contact">
+			<h2>Liên hệ với chúng tôi</h2>
+			<form action="#" method="post">
+				<label for="name">Họ tên:</label>
+				<input type="text" id="name" name="name" required>
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+
+				<label for="message">Nội dung:</label>
+				<textarea id="message" name="message" required></textarea>
+
+				<button type="submit">Gửi liên hệ</button>
+			</form>
+		</section>
+
+	</main>
+
+	<footer>
+		<p>&copy; 2023 Lamborghini Aventador Corporation. All rights reserved.</p>
+	</footer>
+</body>
+<script>
+	// Thiết lập sự kiện click cho nút Mua ngay
+	var buyButton = document.querySelector('#intro button');
+	buyButton.addEventListener('click', function () {
+		alert('Bạn đã mua thành công Lamborghini Aventador');
+	});
+
+	// Thiết lập sự kiện submit cho form liên hệ
+	var contactForm = document.querySelector('#contact form');
+	contactForm.addEventListener('submit', function (event) {
+		event.preventDefault();
+		alert('Cảm ơn bạn đã liên hệ với chúng tôi. Chúng tôi sẽ sớm phản hồi lại cho bạn.');
+	});
+
+</script>
+
+</html>
